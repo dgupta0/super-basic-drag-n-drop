@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+button {
+    width: 75px;
+    height: 40px;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-container {
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.ctn {
+    border: 1px solid gray;
+    width: 350px;
+    height: 500px;
+
+}
+
+.item {
+    width: 75px;
+    text-align: center;
+    cursor: move;
+}
+
+.text {
+    background-color: rgb(167, 143, 143);
+    color: rgb(12, 10, 10);
+}
+
+.dragging {
+    border: 4px dotted rgb(115, 7, 117);
+    opacity: 0.01;
+}
+
+@media(max-width: 500px) {
+    main {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
